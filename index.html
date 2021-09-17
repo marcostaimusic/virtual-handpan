@@ -1,0 +1,242 @@
+
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="This is the HaganeNote handpan Virtual Instrument - VST. Select the handpan scale you like and enjoy playing!">
+        <meta name="author" content="HaganeNote handpan">
+        <meta name="keywords" content="handpan virtual instrument, vst, handpan scale, haganenote">
+        <title>HaganeNote Handpan VST</title>       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    
+    
+<body style="background-color: rgba(102, 102, 102, 1)">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">HaganeNote</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.haganenote.com/about-us/">About us</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.haganenote.com/our-handpans/">Our handpans</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.haganenote.com/handpan-store/">Store</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.haganenote.com/handpan-gallery/">Gallery</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.haganenote.com/tips-lessons/">Tips & Lessons</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.haganenote.com/contacts/">Contacts</a>
+        </li>    
+        </ul>
+    </div>  
+    </nav>
+    <h1 style='font-size: 1.5em'>Handpan Virtual Instrument</h1>
+
+
+    <div id="handpanSVG">
+
+
+        <svg id="handpan" height="60%" width="100%" viewBox="0, 0, 100, 100">
+
+
+            <g id="shellItems" >
+                    <circle id="shell" cx="50" cy="50" r="49"stroke="black" stroke-width="1" fill="grey" />
+                    <!-- <circle id="guidaNote" cx="50" cy="50" r="35" stroke="black" stroke-width="1" fill="grey" />--> 
+            </g >
+
+            <g class ="notes" stroke="black" stroke-width="1" >
+                <circle id="campoNotaDing" class="note" data-note="2" cx="50" cy="50" r="15"  fill="white"  />
+                <circle id="ding" class="dimple" data-note="2" cx="50" cy="50" r="5" stroke="black" stroke-width="1" fill="grey"  />
+            </g>
+
+            <g class= "notes" stroke="black" stroke-width="1">
+                    <ellipse id="campoNota1" class="note" data-note="9"cx="50" cy="85" rx="10" ry="12"fill="white"/>
+                    <ellipse id="dimpleNota1" class="dimple" data-note="9"cx="50" cy="85" rx="5" ry="6" fill="grey"/>
+            </g>
+
+
+            <g class= "notes" stroke="black" stroke-width="1" >
+                <ellipse id="campoNota2" class="note" data-note="10'"cx="50" cy="85" rx="10" ry="12" transform="rotate(45,50,50)" fill="white"/>
+                <ellipse id="dimpleNota2"class="dimple" data-note="10"cx="50" cy="85" rx="5" ry="6" transform="rotate(45,50,50)" fill="grey"/>
+                <!--<text id=NotaDing x="50" y="50">D3</text>-->
+            </g>
+            
+            <g class= "notes" stroke="black" stroke-width="1" >
+                <ellipse id="campoNota3" class="note" data-note="12"cx="50" cy="85" rx="10" ry="12" transform="rotate(-45,50,50)" fill="white"/>
+                <ellipse id="dimpleNota3" class="dimple" data-note="12"cx="50" cy="85" rx="5" ry="6" transform="rotate(-45,50,50)" fill="grey"/>
+            </g>
+
+            <g class= "notes" stroke="black" stroke-width="1" >
+                <ellipse id="campoNota4" class="note" data-note="14"cx="50" cy="85" rx="10" ry="12" transform="rotate(90,50,50)" fill="white"/>
+                <ellipse id="dimpleNota4" class="dimple" data-note="14"cx="50" cy="85" rx="5" ry="6" transform="rotate(90,50,50)" fill="grey"/>
+            </g>
+
+            <g class= "notes" stroke="black" stroke-width="1" >
+                <ellipse id="campoNota5" class="note" data-note="16"cx="50" cy="85" rx="10" ry="12" transform="rotate(-90,50,50)" fill="white"/>
+                <ellipse id="dimpleNota5" class="dimple" data-note="16"cx="50" cy="85" rx="5" ry="6" transform="rotate(-90,50,50)" fill="grey"/>
+            </g> 
+
+            
+            <g class= "notes" stroke="black" stroke-width="1">
+                <ellipse id="campoNota6" class="note" data-note="17"cx="50" cy="85" rx="10" ry="12" transform="rotate(135,50,50)" fill="white"/>
+                <ellipse id="dimpleNota6" class="dimple" data-note="17"cx="50" cy="85" rx="5" ry="6" transform="rotate(135,50,50)" fill="grey"/>
+            </g>
+
+            <g class= "notes" stroke="black" stroke-width="1">
+                <ellipse id="campoNota7" class="note" data-note="19"cx="50" cy="85" rx="10" ry="12" transform="rotate(-135,50,50)" fill="white"/>
+                <ellipse id="dimpleNota7" class="dimple" data-note="19"cx="50" cy="85" rx="5" ry="6" transform="rotate(-135,50,50)" fill="grey"/>
+            </g> 
+
+            <g class= "notes" stroke="black" stroke-width="1" >
+                    <ellipse id="campoNota8" class="note" data-note="21"cx="50" cy="85" rx="10" ry="12" transform="rotate(180,50,50)" fill="white"/>
+                    <ellipse id="dimpleNota8" class="dimple" data-note="21"cx="50" cy="85" rx="5" ry="6" transform="rotate(180,50,50)" fill="grey"/>
+            </g>
+
+            Sorry, your browser does not support inline SVG.
+        </svg>
+
+    </div>
+
+        </br>
+        </br>
+
+    <div style="text-align: center" id="listaNote">D3, A3, Bb3, C4, D4, E4, F4, G4, A4</div>
+    <p style="display: inline-block; background-color: rgba(102, 102, 102, 1); color: rgba(255, 255, 255, 1)"><strong>Turn device sound on </strong></p>
+    
+        <div style="display: inline-block; text-align: center; background-color: rgba(102, 102, 102, 1)" >
+
+            <select style="margin-top: 1em; background-color:#b3b3b3; color:black" id="sel" name="formal" onchange="javascript:changeScale(this)">
+                <option id="scaleSelected" value="dKurd">- Select the scale (Default: Kurd)</option>
+                <option id="scaleSelected" value="eAeolian">- Aeolian</option>
+                <option id="scaleSelected" value="eAkebono">- Akebono</option>
+                <option id="scaleSelected" value="dCelticMinor">- Amara/Celtic Minor</option>
+                <option id="scaleSelected" value="eBluesV1">- Blues v.1</option>
+                <option id="scaleSelected" value="dBluesV2">- Blues v.2</option>
+                <option id="scaleSelected" value="eEquinox">- Equinox</option>
+                <option id="scaleSelected" value="eHijazV1">- Hijaz v.1</option>
+                <option id="scaleSelected" value="dHijazV2">- Hijaz v.2</option>
+                <option id="scaleSelected" value="dIntegral">- Integral</option>
+                <option id="scaleSelected" value="eJibuk">- Jibuk</option>
+                <option id="scaleSelected" value="dKurd">- Kurd/Annaziska</option>
+                <option id="scaleSelected" value="eLaSirena">- La Sirena</option>
+                <option id="scaleSelected" value="fLowPygmy">- Low Pygmy</option>
+                <option id="scaleSelected" value="eMagicVoyage">- Magic Voyage</option>
+                <option id="scaleSelected" value="dMixolydian">- Mixolydian</option>
+                <option id="scaleSelected" value="dMystic">- Mystic</option>
+                <option id="scaleSelected" value="fOxalis">- Oxalis</option>
+                <option id="scaleSelected" value="eParadiseV1">- Paradise v.1</option>
+                <option id="scaleSelected" value="eParadiseV2">- Paradise v.2</option> 
+                <option id="scaleSelected" value="ePentatonic">- Pentatonic</option>
+                <option id="scaleSelected" value="ePygmy">- Pygmy</option>
+                <option id="scaleSelected" value="eRomanian">- Romanian Hijaz</option>
+                <option id="scaleSelected" value="eSabye">- Sabye</option>
+                <option id="scaleSelected" value="dYshasavita">- YshaSavita</option>
+            </select> 
+
+        <!-- <div style="background-color:#b3b3b3; color:black; display:inline-block"> -->
+            <select style="margin-top: 1em; background-color:#b3b3b3; color:black; "id="selDing" name="formal" onchange="javascript:changePitch(this)">
+                <option id="scaleSelected" value="+3semitone">+3 semitones</option>
+                <option id="scaleSelected" value="+2semitone">+2 semitones</option>
+                <option id="scaleSelected" value="+1semitone">+1 semitone</option>
+                <option id="scaleSelected" selected="selected" value="0">- Transpose scale</option>
+                <option id="scaleSelected" value="-1semitone">-1 semitone</option>
+                <option id="scaleSelected" value="-2semitone">-2 semitones</option>
+            </select> 
+
+        </div>
+    </div>
+
+    <div style="text-align: center; background-color: rgba(102, 102, 102, 1); color: rgba(255, 255, 255, 1)" id="listaNote"></div>
+
+
+
+
+    <p style="color: rgba(255, 255, 255, 1); background-color: rgba(102, 102, 102, 1)">This is a multi-touch VST Handpan Virtual Instrument that plays HaganeNote handpan samples. Select the scale and enjoy playing. 
+    If the instrument stops working, just refresh the page and select the scale again. 
+    You can play using the keyboard keys: g, b, v, n, f, h, r, y, t (ascending order). 
+    Below you can find the links to the other pages.
+
+    </p>
+
+
+
+
+
+    <div style="text-align: center; margin-top: 1em; margin-bottom: 3em; background-color: rgba(102, 102, 102, 1);color: rgba(255, 255, 255, 1) ">
+
+        <select style="background-color:#b3b3b3; color:black" name="navigation" onchange="javascript:goToPage(this)" >
+            <option>- Go to Page -</option>
+            <option value="https://www.haganenote.com/handpan-store/">Store</option>
+            <option value="https://www.haganenote.com/tips-lessons/">Tips and Lessons</option>
+            <option value="https://www.haganenote.com/contacts/">Contacts</option>
+            <option></option>
+            <option > - Scale Pages -</option>
+            <option></option>
+            <option value="https://www.haganenote.com/store/aeolian/">Aeolian</option>
+            <option value="https://www.haganenote.com/store/akebono/">Akebono</option>
+            <option value="https://www.haganenote.com/store/celtic-minor/">Amara/Celtic Minor</option>
+            <option value="https://www.haganenote.com/store/blues/">Blues</option>
+            <option value="https://www.haganenote.com/store/equinox/">Equinox</option>
+            <option value="https://www.haganenote.com/store/hijaz/">Hijaz</option>
+            <option value="https://www.haganenote.com/store/integral/">Integral</option>
+            <option value="https://www.haganenote.com/store/jibuk/">Jibuk</option>
+            <option value="https://www.haganenote.com/store/kurd/">Kurd/Annaziska</option>
+            <option value="https://www.haganenote.com/store/la-sirena/">La Sirena</option>
+            <option value="https://www.haganenote.com/store/low-pygmy/">Low Pygmy</option>
+            <option value="https://www.haganenote.com/store/magic-voyage/">Magic Voyage</option>
+            <option value="https://www.haganenote.com/store/mixolydian/">Mixolydian</option>
+            <option value="https://www.haganenote.com/store/mystic/">Mystic</option>
+            <option value="https://www.haganenote.com/store/oxalis/">Oxalis</option>
+            <option value="https://www.haganenote.com/store/paradise/">Paradise</option>
+            <option value="https://www.haganenote.com/store/pentatonic/">Pentatonic</option>
+            <option value="https://www.haganenote.com/store/pygmy/">Pygmy</option>
+            <option value="https://www.haganenote.com/store/romanian-hijaz/">Romanian Hijaz</option>
+            <option value="https://www.haganenote.com/store/sabye/">Sabye</option>
+            <option value="https://www.haganenote.com/store/yshasavita/">YshaSavita</option>
+        </select>   
+    </div>
+    <div>
+
+    </div>
+
+    <p>Follow the link to read the explaining article in our blog: <a href="https://www.haganenote.com/coding/handpan-vst/">link</a></p>
+    <script type='text/javascript' src="Handpan.js"></script>
+    <script type='text/javascript' src="Buffer.js"></script>
+    <script type='text/javascript' src="main.js"></script>
+    
+    
+    
+</body>
+
+<footer style="font-size: 10px; color: rgba(255, 255, 255, 1)">
+
+    <div>© 2018-2021, HaganeNoTe Handpan | <a href="https://www.haganenote.com/legal-advice/">Legal Advice</a> | 
+    <a href="https://www.haganenote.com/privacy-policy/">Privacy Policy</a> | 
+    <a href="https://www.haganenote.com/cookie-policy/">Cookie Policy</a> | 
+    <a href="https://www.haganenote.com/contacts/">Contacts</a> |</div>
+
+    <div>All rights reserved</div>
+
+</footer>
+
+
+</html>
+
+
